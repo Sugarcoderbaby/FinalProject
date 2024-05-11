@@ -1,0 +1,120 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: #FEFEFF;
+  padding: 5px;
+  margin: 15px;
+  font-size: 25px;
+  font-family:Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family:Arial, sans-serif;
+  font-size: 1.95em;
+  color: #534D41;
+  background-color: #fff6ff;
+  height: 20vh;
+  align-content: center;
+}
+
+h2{
+  text-align:center;
+}
+
+li{
+  margin-top: 20px;
+}
+
+figure{
+display: grid;
+}
+
+.grid{
+display: grid;  
+grid-template-columns: 1fr;
+text-align: center;
+row-gap: 10px;
+width: 100%;
+
+}
+
+img{
+position: relative;
+  border: 10px solid #ffd5ff;
+  border-radius: 35px;
+  box-sizing: border-box;
+  width: 100%;
+  
+}
+
+figcaption{
+color: #534D41;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+  padding: 10px;
+
+}
+
+footer a{
+color: #f15152;
+}
+
+
+@media screen and (min-width: 772px){
+.grid{
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+img{
+  border-radius: 100%;
+}
+
+.grid figure:last-child {
+  grid-column: span 2;
+ }
+}
+
+@media screen and (min-width: 992px){
+img{
+  border-radius: 0;
+}
+
+.grid figure:nth-child(3n){
+  grid-column: span 2;
+ }
+}
+
+@media (prefers-reduced-motion){
+  html{
+    scroll-behavior: initial;
+}
+}
+
+@media (prefers-color-scheme: dark){
+body{
+  background-color:#534D41;
+}
+
+h1, p{
+  background-color: #534D41;
+  color:#f6f7e6;
+}
+
+figcaption{
+  color:#f6f7e6;
+}
+
+img{
+border-color: #000000;
+}
+
+footer a{
+  color: #f6f7e6;
+}
+}
